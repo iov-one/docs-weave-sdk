@@ -1,36 +1,26 @@
-const users = [
-  {
-    caption: 'User1',
-    image: '/img/undraw_open_source.svg',
-    infoLink: 'https://www.facebook.com',
-    pinned: true,
-  },
-];
-
 const siteConfig = {
-  title: 'IOV Documentations',
-  tagline: 'Welcome to IOV docs!',
+  title: 'Weave SDK Documentations',
+  tagline: 'Welcome to Weave SDK docs!',
 
-  url: "https://docs.iov.one",
+  url: "https://weave.iov.one",
   baseUrl: "/",
 
-  cname: 'docs.iov.one',
-  projectName: 'docs',
+  cname: 'weave.iov.one',
+  projectName: 'docs-weave-sdk',
   organizationName: 'iov-one',
 
-  algolia: {
+// TODO uncomment when algolia integration is done
+/*  algolia: {
     apiKey: '8dc8128a9091306e7bbd0effdaa5241a',
     indexName: 'iov',
   },
-
+*/
   headerLinks: [
     { href: "https://github.com/iov-one", label: "GitHub" },
     { search: true },
   ],
 
   disableHeaderTitle: true,
-
-  users,
 
   headerIcon: 'img/logo.png',
   footerIcon: false,
