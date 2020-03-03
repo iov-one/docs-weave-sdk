@@ -76,7 +76,7 @@ Merkle trees are like binary trees, but hash the children at each level. This al
 
 A good way to get familiar with setting up and running an application is to follow the steps in the [blog tutorial](weave/tutorial/01-installation.md) sample application. You can run this on your local machine. If you don't have a modern Go development environment already set up, please [follow these instructions](weave/tutorial/01-installation.md#Requirements).
 
-Those that are comfortable with Javascript should check out our [IOV Core Library](iov-core-tutorial/01-introduction.md) which allows easy access to the blockchain from a browser or node environment.
+Those that are comfortable with Javascript should check out our [IOV Core Library](iov-name-service/iov-core) which allows easy access to the blockchain from a browser or node environment.
 
 ## Configuring your Blockchain
 
