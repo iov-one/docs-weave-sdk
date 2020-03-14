@@ -100,6 +100,8 @@ func (u *User) IsRegisteredAfterDate(date time.Time) bool {
 
 This is a productive workflow and I recommend trying it out. You may find it doesn’t work for you and you can try other approaches, like copying the protobuf generated structs into some custom-written structs you like and then copying back into protobuf structs for serialization. You can also try playing with special [protobuf extensions](https://github.com/gogo/protobuf/blob/master/extensions.md) flags in your protobuf files to shape the auto-generated code into the exact shape you want.
 
+## Extra
+
 ### Notes About oneof
 
 **oneof** is a powerful feature to produce union/sum types in your protobuf structures. For example, you may have a public key which may be one of many different algorithms and can define cases for each, which can be switched on in runtime. We also use this for the transaction to enumerate a set of possible messages that can be embedded in the transaction. A transaction may have any one of them and serialize and deserialize properly. Type-safety is enforced in compile-time and we can switch on the kind at runtime. (Example from [bcp-demo](https://github.com/iov-one/bcp-demo/blob/master/app/codec.proto)):
@@ -163,4 +165,3 @@ case *Tx_UpdateEscrowMsg:
     return t.UpdateEscrowMsg, nil
 }
 ```
-
